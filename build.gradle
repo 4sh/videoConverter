@@ -27,8 +27,8 @@ if(!hasProperty("releasesRepoUsername")
     ant.fail "You should define a ~/.gradle/gradle.properties containing properties 'releasesRepoUsername' and 'releasesRepoPassword' to access 4SH releases repository !"
 }
 
-if(!hasProperty("bbeeg.videoConverter.username") || ("bbeeg.videoConverter.password")){
-    ant.fail "You should define a ~/.gradle/gradle.properties containing properties 'bbeeg.videoConverter.username' and 'bbeeg.videoConverter.password' to access 4SH releases repository !"
+if(!hasProperty("bbeeg.videoConverter.username") || !hasProperty("bbeeg.videoConverter.password")){
+    ant.fail "You should define a ~/.gradle/gradle.properties containing properties 'bbeeg.videoConverter.username' and 'bbeeg.videoConverter.password' to access BBEEG demo environnment !"
 }
 
 def ENV_DEMO_USER = getProperty("bbeeg.videoConverter.username");
