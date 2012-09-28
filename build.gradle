@@ -11,7 +11,6 @@ def srcOriginal = "${sourceSets.main.classesDir}"
 
 def STANDALONE_PACKAGING = true;
 def APPLICATION_NAME = "videoConverter";
-def XUGGLE_JAR_PATH = "/usr/local/xuggler/share/java/jars/xuggle-xuggler.jar"
 // Root directory on demo environment, where will be hosted every targetEnvironment directories
 def ENV_DEMO_DEPLOY_ROOT_PATH = "/home/bbeeg/dist";
 // Demo connection properties
@@ -60,7 +59,6 @@ gradle.taskGraph.whenReady {taskGraph ->
     jar {
         manifest {
             attributes 'Main-Class': 'fr.fsh.videoConverter.Main'
-            attributes 'Class-Path': XUGGLE_JAR_PATH
             attributes 'Implementation-Title': APPLICATION_NAME
             attributes 'Implementation-Version': versionForManifest
             attributes 'Implementation-Vendor': '4SH France'
@@ -86,7 +84,7 @@ configurations {
 
 dependencies {
     compile(
-            fileTree('/usr/local/share/java/jars/xuggle-xuggler.jar'),
+            [group: 'xuggle', name: 'xuggle-xuggler', version: '5.4'],
             [group: 'org.slf4j', name: 'slf4j-api', version: '1.5.6'],
             [group: 'com.beust', name:'jcommander', version: '1.17', transitive: true],
             [group: 'commons-cli', name:'commons-cli', version: '1.1']
