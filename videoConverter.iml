@@ -12,7 +12,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/xuggle/xuggle-xuggler/5.4/jar/53a5b0f219d86c2fd570675fcbaa6a6c1a0626e8/xuggle-xuggler-5.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/xuggle/xuggle-xuggler/5.4/jar/53a5b0f219d86c2fd570675fcbaa6a6c1a0626e8/xuggle-xuggler-5.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -21,77 +21,77 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/com.beust/jcommander/1.17/jar/219a3540f3b27d7cc3b1d91d6ea046cd8723290e/jcommander-1.17.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/com.beust/jcommander/1.17/jar/219a3540f3b27d7cc3b1d91d6ea046cd8723290e/jcommander-1.17.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/com.beust/jcommander/1.17/source/bb50eec177acf0e94d58e0cf07262fe5164331d/jcommander-1.17-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/com.beust/jcommander/1.17/source/bb50eec177acf0e94d58e0cf07262fe5164331d/jcommander-1.17-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-cli/commons-cli/1.1/jar/11c98b99ad538f2f67633afd4d7f4d98ecfbb408/commons-cli-1.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/commons-cli/commons-cli/1.1/jar/11c98b99ad538f2f67633afd4d7f4d98ecfbb408/commons-cli-1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/commons-cli/commons-cli/1.1/source/5111aa2ad78d87a8a096d0cf80e7e70bb76fa91e/commons-cli-1.1-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/commons-cli/commons-cli/1.1/source/5111aa2ad78d87a8a096d0cf80e7e70bb76fa91e/commons-cli-1.1-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.slf4j/slf4j-api/1.6.4/jar/2396d74b12b905f780ed7966738bb78438e8371a/slf4j-api-1.6.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.slf4j/slf4j-api/1.6.4/jar/2396d74b12b905f780ed7966738bb78438e8371a/slf4j-api-1.6.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.slf4j/slf4j-api/1.6.4/source/a045ecb292c2b2559e8e9778303a08c91f537c68/slf4j-api-1.6.4-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.slf4j/slf4j-api/1.6.4/source/a045ecb292c2b2559e8e9778303a08c91f537c68/slf4j-api-1.6.4-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/ch.qos.logback/logback-core/1.0.0/jar/b2893bbe71342232031f97faa1cf7bb4d99faced/logback-core-1.0.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/ch.qos.logback/logback-core/1.0.0/jar/b2893bbe71342232031f97faa1cf7bb4d99faced/logback-core-1.0.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/ch.qos.logback/logback-core/1.0.0/source/6b0ad3360ba11612e75aea121c3979a5a6750f90/logback-core-1.0.0-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/ch.qos.logback/logback-core/1.0.0/source/6b0ad3360ba11612e75aea121c3979a5a6750f90/logback-core-1.0.0-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/ch.qos.logback/logback-classic/1.0.0/jar/2577f6b69bbab34bb55634a4500b1b877aeffb7c/logback-classic-1.0.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/ch.qos.logback/logback-classic/1.0.0/jar/2577f6b69bbab34bb55634a4500b1b877aeffb7c/logback-classic-1.0.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/ch.qos.logback/logback-classic/1.0.0/source/eebfd12633815cc6ac32968896436bbf74390688/logback-classic-1.0.0-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/ch.qos.logback/logback-classic/1.0.0/source/eebfd12633815cc6ac32968896436bbf74390688/logback-classic-1.0.0-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="" scope="RUNTIME">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.slf4j/log4j-over-slf4j/1.5.6/jar/2088f592ecac7189e81dcd92520212f58e415c6f/log4j-over-slf4j-1.5.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.slf4j/log4j-over-slf4j/1.5.6/jar/2088f592ecac7189e81dcd92520212f58e415c6f/log4j-over-slf4j-1.5.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/org.slf4j/log4j-over-slf4j/1.5.6/source/bc7540dd23a2371c38512f7a97bdc09c6eab7e19/log4j-over-slf4j-1.5.6-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/org.slf4j/log4j-over-slf4j/1.5.6/source/bc7540dd23a2371c38512f7a97bdc09c6eab7e19/log4j-over-slf4j-1.5.6-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/junit/junit/4.8.2/jar/c94f54227b08100974c36170dcb53329435fe5ad/junit-4.8.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/junit/junit/4.8.2/jar/c94f54227b08100974c36170dcb53329435fe5ad/junit-4.8.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-8/filestore/junit/junit/4.8.2/source/cccca612a66b8387c399be31d69daf000de2ac9e/junit-4.8.2-sources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/artifacts-14/filestore/junit/junit/4.8.2/source/cccca612a66b8387c399be31d69daf000de2ac9e/junit-4.8.2-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>

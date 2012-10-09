@@ -7,7 +7,7 @@ targetCompatibility = 1.7
 
 def timestamp = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 
-def srcOriginal = "${sourceSets.main.classesDir}"
+def srcOriginal = "${sourceSets.main.output.classesDir}"
 
 def STANDALONE_PACKAGING = true;
 def APPLICATION_NAME = "videoConverter";
@@ -103,8 +103,8 @@ dependencies {
 
 sourceSets {
     intTest {
-        compileClasspath = sourceSets.main.classes + configurations.intTestCompile
-        runtimeClasspath = classes + sourceSets.main.classes + configurations.intTestRuntime
+        compileClasspath = sourceSets.main.output + configurations.intTestCompile
+        runtimeClasspath = output + sourceSets.main.output + configurations.intTestRuntime
         java {
             srcDir "src/integration-test/java"
         }
@@ -115,8 +115,8 @@ sourceSets {
 }
 
 // Allows to generate USER_HOME idea variable uniformely on every OS
-ideaModule {
-    variables.put("USER_HOME", file(System.getProperty("user.home")))
+idea {
+    pathVariables("USER_HOME": file(System.getProperty("user.home")))
 }
 
 if (STANDALONE_PACKAGING) {
@@ -194,6 +194,6 @@ task startVideoConverter(dependsOn: [initSsh]) << {
 }
 
 task intTest(type: Test) {
-    testClassesDir = sourceSets.intTest.classesDir
+    testClassesDir = sourceSets.intTest.output.classesDir
     classpath = sourceSets.intTest.runtimeClasspath
 }
