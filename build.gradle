@@ -1,13 +1,17 @@
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'maven'
+// For gradle release
+apply from: "https://launchpad.net/gradle-release/trunk/1.0/+download/apply.groovy"
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
-def timestamp = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.2'
+}
 
-def srcOriginal = "${sourceSets.main.output.classesDir}"
+def timestamp = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 
 def STANDALONE_PACKAGING = true;
 def APPLICATION_NAME = "videoConverter";
@@ -80,6 +84,7 @@ configurations {
     intTestCompile { extendsFrom testCompile }
     intTestRuntime { extendsFrom intTestCompile, runtime }
     ssh
+    deployerJars
 }
 
 dependencies {
@@ -197,3 +202,25 @@ task intTest(type: Test) {
     testClassesDir = sourceSets.intTest.output.classesDir
     classpath = sourceSets.intTest.runtimeClasspath
 }
+
+uploadArchives {
+    repositories.mavenDeployer {
+        configuration = configurations.deployerJars
+        snapshotRepository(url: "http://repo.4sh.fr/libs-snapshot-local") {
+            authentication(userName: releasesRepoUsername, password: releasesRepoPassword)
+        }
+        repository(url: "http://repo.4sh.fr/libs-release-local/") {
+            authentication(userName: releasesRepoUsername, password: releasesRepoPassword)
+        }
+    }
+}
+
+release {
+    // Hack allowing to skip the "next version" prompt
+    project.setProperty("gradle.release.useAutomaticVersion", "true");
+    // Define here custom commit messages
+    newVersionCommitMessage = "Re-snapshoted project to version "
+    preTagCommitMessage = "Preparing version for release "
+    tagCommitMessage = "Tag for version "
+}
+createReleaseTag.dependsOn uploadArchives
